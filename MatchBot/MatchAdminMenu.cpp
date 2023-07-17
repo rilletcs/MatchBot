@@ -516,7 +516,7 @@ bool CMatchAdminMenu::Rcon(CBasePlayer* Player)
 
 			std::string Args = pCmdArgs;
 
-			if (Args.find("rcon_password") != std::string::npos || Args.find("sv_password") != std::string::npos)
+			if (Args.find("rcon_password") != std::string::npos)
 			{
 				gMatchUtil.SayText(Player->edict(), PRINT_TEAM_DEFAULT, _T("These commands are protected here, only \3Server\1 can use."));
 				return false;
