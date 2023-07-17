@@ -2,9 +2,9 @@ name: Windows Build CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ main, stable ]
   pull_request:
-    branches: [ main ]
+    branches: [ main, stable ]
 
 env:
   SOLUTION_FILE_PATH: .
