@@ -922,3 +922,13 @@ es:"Los administradores revisarán el informe y tomarán medidas si es necesario
 en:"Failed to authenticate, contact us: %s"
 bp:"Falha ao autenticar, entre em contato: %s"
 es:"No se pudo autenticar, contáctenos: %s"
+
+"Banned permanently!\nContact: %s"
+en:"Banned permanently!\nContact: %s"
+bp:"Banido permanentemente!\nContato: %s"
+es:"Prohibido permanentemente!\nContáctenos: %s"
+
+"Banned for %d minutes!\nContact: %s"
+en:"Banned for %d minutes!\nContact: %s"
+bp:"Banido por %d minutos!\nContato: %s"
+es:"Prohibido por %d minutos!\nContáctenos: %s"
