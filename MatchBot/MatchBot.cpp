@@ -654,6 +654,13 @@ bool CMatchBot::PlayerJoinTeam(CBasePlayer* Player, int Slot)
 			// Send team info, to enable colors in chat messages
 			gMatchUtil.TeamInfo(Player->edict(), MAX_CLIENTS + TERRORIST + 1, "TERRORIST");
 			gMatchUtil.TeamInfo(Player->edict(), MAX_CLIENTS + CT + 1, "CT");
+
+			char Buffer[MAX_PATH] = { 0 };
+
+			// Format map name
+			Q_snprintf(Buffer, sizeof(Buffer), "stop; record %s-%s\n", gMatchBot.GetTag(), STRING(gpGlobals->mapname));
+
+			g_engfuncs.pfnClientCommand(Player->edict(), Buffer);
 		}
 	}
 
