@@ -706,3 +706,18 @@ int CMatchUtil::ParseLinesAndColors(char* Buffer)
 
 	return offs;
 }
+
+void CMatchUtil::RecordDemo(edict_t* pEntity, const char* Format, ...)
+{
+	va_list argList;
+
+	va_start(argList, Format);
+
+	char Buffer[255] = { 0 };
+
+	vsnprintf(Buffer, sizeof(Buffer), Format, argList);
+
+	va_end(argList);
+
+	g_engfuncs.pfnClientCommand(pEntity, "stop; record %s\n", Buffer);
+}

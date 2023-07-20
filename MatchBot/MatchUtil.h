@@ -85,6 +85,9 @@ public:
 	// New Lines and colors
 	int ParseLinesAndColors(char* Buffer);
 
+	// Record a new demo
+	void RecordDemo(edict_t* pEntity, const char* Format, ...);
+
 private:
 	// Variables Pointer
 	std::map<std::string, cvar_t> m_CvarData;

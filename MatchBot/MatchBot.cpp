@@ -671,6 +671,9 @@ bool CMatchBot::PlayerJoinTeam(CBasePlayer* Player, int Slot)
 			// Send team info, to enable colors in chat messages
 			gMatchUtil.TeamInfo(Player->edict(), MAX_CLIENTS + TERRORIST + 1, "TERRORIST");
 			gMatchUtil.TeamInfo(Player->edict(), MAX_CLIENTS + CT + 1, "CT");
+
+			// Record a demo as soon as the player tries to assign a team
+			gMatchUtil.RecordDemo(Player->edict(), "%s-%s", gMatchBot.GetTag(), STRING(gpGlobals->mapname));
 		}
 	}
 
