@@ -218,7 +218,16 @@ void CMatchAdminMenu::BanMenuHandle(int EntityIndex, P_MENU_ITEM Item)
 			}
 			else
 			{
-				gMatchUtil.ServerCommand("banid %d #%d kick;wait;writeid", Item.Extra, GETPLAYERUSERID(Target->edict()));
+				gMatchUtil.ServerCommand("banid %d %s;wait;writeid", Item.Extra, GET_USER_AUTH(Target->edict()));
+
+				if ( Item.Extra == 0 )
+				{
+					gMatchUtil.DropClient(ENTINDEX(Target->edict()), _T("Banned permanently!\nContact: %s"), g_engfuncs.pfnCVarGetString("sv_contact"));
+				}
+				else
+				{
+					gMatchUtil.DropClient(ENTINDEX(Target->edict()), _T( "Banned for %d minutes!\nContact: %s" ), Item.Extra, g_engfuncs.pfnCVarGetString("sv_contact"));
+				}
 
 				gMatchAdminMenu.BanMenu(EntityIndex);
 			}

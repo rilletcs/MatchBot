@@ -1108,5 +1108,17 @@
         "bp": "Falha ao autenticar, entre em contato: %s",
         "es": "No se pudo autenticar, contáctenos: %s",
         "ru": "Не удалось аутентифицироваться, свяжитесь с нами: %s"
+    },
+    "Banned permanently!\nContact: %s": {
+        "en": "Banned permanently!\nContact: %s",
+        "bp": "Banido permanentemente!\nContato: %s",
+        "es": "Prohibido permanentemente!\nContáctenos: %s",
+        "ru": "Забанен навсегда!\nСвяжитесь с нами: %s"
+    },
+    "Banned for %d minutes!\nContact: %s": {
+        "en": "Banned for %d minutes!\nContact: %s",
+        "bp": "Banido por %d minutos!\nContato: %s",
+        "es": "Prohibido por %d minutos!\nContáctenos: %s",
+        "ru": "Заблокирован на %d минут!\nСвяжитесь с нами: %s"
     }
 }
