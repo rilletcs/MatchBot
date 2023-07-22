@@ -226,7 +226,7 @@ void CMatchAdminMenu::BanMenuHandle(int EntityIndex, P_MENU_ITEM Item)
 				}
 				else
 				{
-					gMatchUtil.DropClient(ENTINDEX(Target->edict()), _T( "Banned for %d minutes!\nContact: %s" ), Item.Extra, g_engfuncs.pfnCVarGetString("sv_contact"));
+					gMatchUtil.DropClient(ENTINDEX(Target->edict()), _T("Banned for %d minutes!\nContact: %s"), Item.Extra, g_engfuncs.pfnCVarGetString("sv_contact"));
 				}
 
 				gMatchAdminMenu.BanMenu(EntityIndex);
