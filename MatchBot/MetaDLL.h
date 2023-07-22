@@ -2,6 +2,7 @@
 
 #pragma region DLL_PRE
 BOOL DLL_PRE_ClientConnect(edict_t* pEntity, const char* pszName, const char* pszAddress, char szRejectReason[128]);
+BOOL DLL_PRE_InconsistentFile(const edict_t* pEntity, const char* pszFilename, char* szDisconnectMessage);
 #pragma endregion
 
 #pragma region DLL_POST

@@ -1120,5 +1120,17 @@
         "bp": "Banido por %d minutos!\nContato: %s",
         "es": "Prohibido por %d minutos!\nContáctenos: %s",
         "ru": "Заблокирован на %d минут!\nСвяжитесь с нами: %s"
+    },
+    "Modified file": {
+        "en": "Modified file",
+        "bp": "Arquivo modificado",
+        "es": "Archivo modificado",
+        "ru": "Измененный файл"
+    },
+    "Reinstall the file: %s": {
+        "en": "Reinstall the file: %s",
+        "bp": "Reinstale o arquivo: %s",
+        "es": "Reinstalar el archivo: %s",
+        "ru": "Переустановите файл: %s"
     }
 }
